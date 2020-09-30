@@ -1,0 +1,18 @@
+{
+  "name": "zomentum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andriy Pytsko",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.0"
+  }
+}

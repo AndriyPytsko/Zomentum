@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap');
+body{
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+.container{
+    max-width: 1025px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+}
+.header__logo{
+    width: 200px;
+    height: 30px;
+}
+.header__nav{
+    display: flex;
+    list-style: none;
+}
+.header__nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000C2D;
+    padding: 15px 20px;
+    border: 2px solid white;
+}
+.header__nav-link:hover{
+    border: 2px solid #2F70FE;
+    transition: all 0.2s ease;
+}
+.header__nav-link-icon{
+    margin-right: 7px;
+}
+.burger-nav-btn{
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000C2D;
+    padding: 15px 20px;
+    border: 2px solid #2F70FE;
+    cursor: pointer;
+    display: none;
+}
+.burger-nav-btn:hover{
+    background:  #2F70FE;
+    color: white;
+    transition: all 0.2s ease;
+}
+.burger-nav-list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    list-style: none;
+    margin: 30px auto;
+    height: 430px;
+    padding: 0;
+}
+.burger-nav-list__link{
+    display: block;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #2F70FE;
+}
+.burger-nav-container{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 59, 189, 0.44);
+}
+.burger-nav-list__close{
+    padding: 15px;
+    background: #000C2D;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.burger-is-open{
+    display: flex;
+}
+
+/* offer */
+
+.offer{
+    background: url("../img/big-bg.png") no-repeat center bottom
+                rgba(0, 255, 133, 0.08);
+    background-size: cover;
+}
+.offer-content{
+    text-align: center;
+    width: 630px;
+    margin: 0 auto;
+    color: white;
+    padding: 130px 0 170px 0;
+}
+.offer-content__title{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 80px;
+    margin: 0;
+}
+.offer-content__description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.offer-content__btn{
+    width: 165px;
+    height: 52px;
+    color: white;
+    background: black;
+    border: none;
+    margin-top: 40px;
+    outline: none;
+    cursor: pointer;
+}
+.offer-content__btn:hover{
+    border: 1px solid white;
+    transition: all 0.2s ease;
+}
+
+/* benefits */
+
+.benefits{
+    background: rgba(0, 255, 133, 0.08);
+    padding: 40px 0 100px 0;
+}
+.benefits-content__img-left{
+    position: absolute;
+    left: -200px;
+    bottom: 0;
+}
+.benefits-content__img-right{
+    position: absolute;
+    right: -180px;
+    top: 0;
+}
+.benefits-content{
+    position: relative;
+    width: 815px;
+    margin: 0 auto;
+    text-align: center;
+}
+.benefits-content__title{
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 0;
+}
+.benefits-list{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.benefits-list__item{
+    width: 250px;
+}
+.benefits-list__description{
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* features */
+
+.features-content{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.features-content__text{
+    width: 40%;
+}
+.features-content__title{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.features-content__description{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.features-content__link{
+    color: #2F70FE;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px 10px 0;
+}
+.features-content__link:hover{
+    border: 1px solid #2F70FE;
+    transition: all 0.2s ease;
+}
+.features-content__img-container{
+    width: 40%;
+}
+
+/* footer */
+
+.footer{
+    background: black;
+    padding: 50px 0 40px 0;
+}
+.footer__links{
+    display: flex;
+    justify-content: space-between;
+}
+.link-list{
+    color: white;
+    list-style: none;
+    padding: 0;
+}
+.link-list__title{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 23px 0;
+}
+.link-list__item{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+.footer__copyright{
+    color:  white;
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+/* adaptive */
+
+@media (max-width: 1175px) {
+    .benefits-content__img-right, .benefits-content__img-left{
+        display: none;
+    }
+    .header{
+        padding-right: 10px;
+    }
+    .header__nav{
+        padding: 0;
+    }
+    .header__nav-link{
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+    .footer__links{
+        justify-content: space-around;
+    }
+    .footer__copyright{
+        text-align: center;
+    }
+}
+@media (max-width: 920px) {
+    .features-content__img{
+        width: 100%;
+    }
+    .benefits-list{
+        width: 80%;
+        margin: 40px auto 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 825px){
+    .header__nav{
+        display: none;
+    }
+    .burger-nav-btn{
+        display: block;
+    }
+    .benefits-content{
+        width: 80%;
+    }
+    .footer__links{
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 690px) {
+    .offer-content{
+        width: 90%;
+    }
+    .features-content{
+        flex-direction: column;
+    }
+    .features-content:nth-child(2n+1){
+        flex-direction: column-reverse;
+    }
+    .features-content__text{
+        width: 70%;
+        text-align: center;
+    }
+    .features-content__link{
+        padding: 10px 20px;
+    }
+    .features-content__img-container{
+        width: 50%;
+    }
+    .footer__links{
+        text-align: center;
+        flex-direction: column;
+    }
+    .offer-content__title{
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+@media (max-width: 690px) {
+    .header__logo{
+        width: 100px;
+        height: 20px;
+    }
+    .header{
+        padding: 25px 20px;
+    }
+}
